@@ -1,0 +1,11 @@
+<nav>
+  <mat-toolbar color="primary">
+      <span>User registration</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button routerLink="/" color="primary">Home</button>
+      <button *ngIf="user" mat-raised-button routerLink="/clients/add" color="primary">Add Client</button>
+      <button *ngIf="!user" mat-raised-button routerLink="/login" color="primary">Login</button>
+      <button *ngIf="user" mat-raised-button routerLink="/clients" color="primary">Clients</button>
+      <button *ngIf="user" mat-raised-button routerLink="/clients" color="primary"(click)="logOut()" >Logout</button>
+  </mat-toolbar>
+</nav>

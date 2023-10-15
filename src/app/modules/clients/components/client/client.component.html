@@ -1,0 +1,10 @@
+<div *ngIf="client" class="client">
+  <div class="client__data"> <h1>Customer data</h1>
+    <p>Name:{{client.firstname}}</p>
+    <p>Surname: {{client.surname}}</p>
+    <p>Phone: {{client.phone}}</p>
+    <p>Address: {{client.address}}</p>
+    <button color="warn" mat-raised-button (click)="openDialog()">Delete</button>
+    <button color="warn" mat-raised-button (click)="openEditDialog()">Edit</button></div>
+
+</div>

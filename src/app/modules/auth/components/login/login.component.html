@@ -1,0 +1,37 @@
+<div class="mt-3 login-wrapper">
+  <h2>Login in</h2>
+  <form #f='ngForm' (ngSubmit)="onLogin()" >
+
+    <div>
+      <mat-form-field>
+        <mat-label>User name </mat-label>
+        <input matInput  required minlength="4"  name="user" [(ngModel)]="loginData.userName">
+      </mat-form-field>
+    </div>
+    <ng-container *ngIf="f.controls?.['user']?.invalid && f.controls?.['user']?.touched && f.controls?.['user']?.dirty ">
+      <app-alert *ngIf="f.controls?.['user']?.errors" [text]="text" ></app-alert>
+    </ng-container>
+    <div>
+      <mat-form-field>
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" required name="password" [(ngModel)]="loginData.password">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <ng-container *ngIf="f.controls?.['password']?.invalid && ( f.controls?.['password']?.touched || f.controls?.['password']?.dirty) ">
+      <app-alert *ngIf="f.controls?.['password']?.errors" [text]="text2" ></app-alert>
+    </ng-container>
+    <ng-container *ngIf="errorMessage">
+      <app-alert [text]="errorMessage" ></app-alert>
+    </ng-container>
+
+    <div>
+      <p class="text-center"> You don't have account <a routerLink="/register">Register</a></p>
+    </div>
+    <div class="button">
+      <button mat-raised-button color="primary" type="submit" [disabled]="f.invalid">Login</button>
+    </div>
+  </form>
+</div>

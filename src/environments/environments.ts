@@ -1,4 +1,4 @@
 export const environment  = {
-  prduction:true,
+  production:true,
   apiUrl: "www.moja-strona.pl"
 }

@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "nic@g.com",
+      "password": "test",
+      "userName": "test"
+    },
+    {
+      "id": 2,
+      "email": "dupa",
+      "password": "dupa",
+      "userName": "dupa"
+    },
+    {
+      "email": "skowronek.nicolas@gmail.com",
+      "userName": "Nicos",
+      "password": "Kroll2008",
+      "id": 3
+    },
+    {
+      "email": "skowronek.nicolas@gmail.com",
+      "userName": "Nicos",
+      "password": "Kroll2008",
+      "id": 4
+    },
+    {
+      "email": "MichałPietrzok@gmail.mtd.codewise.space",
+      "userName": "Pietrzok",
+      "password": "MichaśWuja",
+      "id": 5
+    },
+    {
+      "email": "asdasd@gmail.com",
+      "userName": "asdsa",
+      "password": "asas",
+      "hobbies": [
+        "asasas",
+        "awsas"
+      ],
+      "id": 6
+    },
+    {
+      "email": "magdalenka123@gmail.com",
+      "userName": "Madżi123",
+      "password": "Nicolasjestsuper",
+      "hobbies": [
+        ""
+      ],
+      "id": 7
+    }
+  ],
+  "clients": [
+    {
+      "firstname": "Nicolas22",
+      "surname": "Skowronek",
+      "email": "skow@gmail.com",
+      "phone": "79496120",
+      "address": "Targowa 1c",
+      "postcode": "34-300",
+      "id": 1
+    },
+    {
+      "firstname": "Magdalena ",
+      "surname": "Skowronek",
+      "email": "Madzi79@gmail.com",
+      "phone": "5437888290",
+      "address": "Testowa3",
+      "postcode": "30-666",
+      "id": 2
+    }
+  ]
+}
