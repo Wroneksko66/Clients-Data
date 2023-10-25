@@ -38,7 +38,9 @@ export class AuthService {
       tap((user: User[]) => this.handleAuthentication(user)),
     );
   }
-
+  isLoggedIn(): boolean {
+    return !!this.user.getValue();
+  }
   logout() {
     this.user.next(null);
     localStorage.removeItem('user');

@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill" class="prefix">
+  <mat-label>Directional</mat-label>
+  <input  matInput [formControl]="numberPrefixControl">
+  <mat-error *ngIf="numberPrefixControl.invalid">Filed area code</mat-error>
+</mat-form-field>
+<mat-form-field appearance="fill" class="number">
+  <mat-label>Telephone number</mat-label>
+  <input [formControl]="numberControl" matInput >
+  <mat-error *ngIf="numberControl.invalid">The number must contain nine characters</mat-error>
+</mat-form-field>

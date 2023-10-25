@@ -48,18 +48,18 @@
         ""
       ],
       "id": 7
+    },
+    {
+      "email": "skowronek.klaudiusz@gmail.com",
+      "userName": "Klaudiusz123",
+      "password": "Renomasz",
+      "hobbies": [
+        ""
+      ],
+      "id": 8
     }
   ],
   "clients": [
-    {
-      "firstname": "Nicolas22",
-      "surname": "Skowronek",
-      "email": "skow@gmail.com",
-      "phone": "79496120",
-      "address": "Targowa 1c",
-      "postcode": "34-300",
-      "id": 1
-    },
     {
       "firstname": "Magdalena ",
       "surname": "Skowronek",
@@ -68,6 +68,33 @@
       "address": "Testowa3",
       "postcode": "30-666",
       "id": 2
+    },
+    {
+      "firstname": "Rafał",
+      "surname": "Wilczur",
+      "email": "skowronek.nicolas@gmail.com",
+      "phone": "+48123666456",
+      "address": "Testowa1",
+      "postcode": "11-222",
+      "id": 4
+    },
+    {
+      "firstname": "Nicolas",
+      "surname": "Skowronek",
+      "email": "skowronek.nicolas@gmail.com",
+      "phone": "+48794961204",
+      "address": "Targowa 1c",
+      "postcode": "11-222",
+      "id": 5
+    },
+    {
+      "firstname": "Michał",
+      "surname": "Pietrzok",
+      "email": "Mtd@Pietr.com",
+      "phone": "+48660717262",
+      "address": "Matejki42",
+      "postcode": "46-300",
+      "id": 6
     }
   ]
 }

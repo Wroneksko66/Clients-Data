@@ -14,6 +14,9 @@ export class FormService {
     if (control.hasError('minlength')) {
       return 'Przekazałeles za malo znakow w kontrolce';
     }
+    if (control.hasError('invalidPostcode')) {
+      return 'Format kodu pocztowego powinien być xx-xxx';
+    }
 
     return control.hasError('email') ? 'Nieprawidlowy mail' : '';
   }

@@ -1,4 +1,4 @@
-export const environment  = {
-  production:true,
-  apiUrl: "www.moja-strona.pl"
-}
+export const environment = {
+  production: true,
+  apiUrl: 'http://localHost:3000',
+};
